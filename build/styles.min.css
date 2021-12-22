@@ -1,0 +1,160 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
+  \****************************************************************************************************************/
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.todo-priority {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.todo__high {
+  margin-top: 25px;
+}
+
+.todo__headline {
+  margin: 8px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.todo__form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.todo__form-input,
+.task {
+  width: 100%;
+  margin: 4px 8px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #989898;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.todo__form-input {
+  color: #BBBBBB;
+}
+
+.todo__form-button,
+.task__close-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  color: #998899;
+}
+
+.todo__form-button {
+  position: absolute;
+  right: 9px;
+}
+
+.todo__task-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: initial;
+}
+
+.task__status {
+  position: relative;
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid #998899;
+  border-radius: 50%;
+}
+.task__status:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: none;
+  width: 15px;
+  height: 15px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+}
+
+.task--checked {
+  background-color: #F4F4F4;
+}
+.task--checked .task__status:before {
+  display: block;
+}
+
+.task__text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.task__close-btn {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #BBBBBB;
+}
